@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <Flex
         width="100%"
-        height="84vh"
+        height="86vh"
         bgGradient={
           "linear-gradient(to bottom, #080824, #090e2f, #07133a, #071646, #071952);"
         }
