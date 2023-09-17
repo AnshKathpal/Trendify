@@ -1,4 +1,4 @@
-import { Flex, Text, Box } from "@chakra-ui/react";
+import { Flex, Text, Box, Button } from "@chakra-ui/react";
 import React from "react";
 
 export const Navbar = () => {
@@ -9,21 +9,20 @@ export const Navbar = () => {
         color="white"
         width={"100%"}
         bg="#080824"
-        h="12vh"
-        border={"1px solid red"}
+        h="10vh"
         align="center"
       >
-        <Box >Trendify</Box>
+        <Box>Trendify</Box>
         <Flex
-          border="1px solid red"
           w="50%"
           justify={"space-evenly"}
           align="center"
         >
-          <Text>Home</Text>
-          <Text>Products</Text>
-          <Text>About Us</Text>
-          <Text>Contact</Text>
+          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px" >Home</Text>
+          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">Products</Text>
+          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">About Us</Text>
+          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">Contact</Text>
+          <Button border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px" >Login</Button>
         </Flex>
       </Flex>
     </div>
