@@ -3,7 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import lv from "../images/lv-shoe.png";
 import wave from "../images/wave.png";
 
-export const Header = () => {
+export const Header = ({src,text1,text2}) => {
   return (
     <>
       <Flex
@@ -30,7 +30,7 @@ export const Header = () => {
               rotate: "15deg",
               filter: "drop-shadow(5px px 5px white)",
             }}
-            src={lv}
+            src={src}
             alt=""
           />
         </Box>
@@ -47,8 +47,8 @@ export const Header = () => {
             fontSize={{ base: "50px", lg: "150px" }}
             color={"white"}
           >
-            Style for the <br />
-            <span style={{ color: "#ECB365" }}>Next Step</span>
+            {text1} <br />
+            <span style={{ color: "#ECB365" }}>{text2}</span>
           </Text>
         </Flex>
         <Flex
