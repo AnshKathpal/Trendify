@@ -3,7 +3,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div>
+    <div style={{position : "relative"}}>
       <Flex
         justify={"space-between"}
         color="white"
@@ -11,6 +11,9 @@ export const Navbar = () => {
         bg="#080824"
         h="10vh"
         align="center"
+        pos={"fixed"}
+        zIndex = "100"
+        display={{base : "none", lg : "flex"}}
       >
         <Box>Trendify</Box>
         <Flex

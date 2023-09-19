@@ -9,18 +9,18 @@ export const Shop = () => {
     <>
       <Box
         bgGradient={
-          "linear-gradient(to bottom, #d4d5da, #9ea2b7, #6d7195, #3e4373, #071951);"
+          "linear-gradient(to bottom, #d4d5da, #9ea2b7, #6d7195, #3e4373, #080824);"
         }
       >
-        <Text fontFamily={"'Passion One', cursive"} fontSize="90px">
+        <Text fontFamily={"'Passion One', cursive"} fontSize={{base : "40px", lg : "90px"}} p = {{base : "5", lg : "0"}}>
           What are you Shopping For?
         </Text>
         <Grid
-          gridTemplateColumns={"repeat(3,1fr)"}
+          gridTemplateColumns={{base : "repeat(1,1fr)", lg : "repeat(3,1fr)"}}
           gap="10"
-          w="90%"
+          w={{base : "95%", lg : "90%"}}
           m="auto"
-          p="10"
+          p={{base : "5", lg : "10"}}
         >
           <Box bg="white" h="50vh" pos="relative" _hover={{".textShoes" : {visibility : "visible"} , ".imgShoes" : {transform : "scale(1.1)"}}}>
             <img
@@ -29,6 +29,7 @@ export const Shop = () => {
               style={{
                 objectFit: "cover",
                 height: "100%",
+                width : "100%",
                 transition: "transform 0.3s ease",
                 filter : "brightness(0.4)"
               }}
