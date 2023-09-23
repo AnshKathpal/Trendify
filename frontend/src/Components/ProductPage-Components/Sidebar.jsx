@@ -18,26 +18,21 @@ export const Sidebar = () => {
     setSearchParams(params);
   }, [category]);
 
-
   const handleCategory = (e) => {
-
-    const {value} = e.target;
-    let newCategory = [...category]
-    if(newCategory.includes(value)){
-      newCategory = newCategory.filter((el) => el !== value)
-    }else{
-      newCategory.push(value)
+    const { value } = e.target;
+    let newCategory = [...category];
+    if (newCategory.includes(value)) {
+      newCategory = newCategory.filter((el) => el !== value);
+    } else {
+      newCategory.push(value);
     }
-    setCategory(newCategory)
-
-
-
-  }
+    setCategory(newCategory);
+  };
 
   return (
     <>
       <Flex pos={"relative"} top="10vh">
-        <Flex border="1px solid red" w="20%" h="100vh" direction={"column"}>
+        <Flex border="1px solid red" w="20%" direction={"column"}>
           <Box>
             <label>Casuals</label>
             <input
