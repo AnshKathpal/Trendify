@@ -82,6 +82,8 @@ function ProductCard() {
   };
 
   return (
+    <>
+    
     <Grid
       gridTemplateColumns={"repeat(3,1fr)"}
       p="10"
@@ -92,6 +94,7 @@ function ProductCard() {
       border="1px solid white"
       gap="10"
       h="auto"
+      position={"relative"}
     >
       {data &&
         data.map((el, index) => {
@@ -197,12 +200,16 @@ function ProductCard() {
           }
           return null; // Render nothing for items outside the range
         })}
-      <Pagination
-        currentPage={currentPage}
-        totalPages={Math.ceil(totalProducts/itemsPerPage)}
-        onPageChange={handlePageChange}
-      />
+        <Box border = "1px solid red">
+     <Pagination
+       currentPage={currentPage}
+       totalPages={Math.ceil(totalProducts/itemsPerPage)}
+       onPageChange={handlePageChange}
+     />
+       </Box>
     </Grid>
+     
+       </>
   );
 }
 
