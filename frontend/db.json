@@ -7,7 +7,9 @@
       "price": 4.5,
       "rating": 4.2,
       "numReviews": 34,
-      "category": "Casuals"
+      "category": "Casuals",
+      "brand" : "Puma",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -16,7 +18,9 @@
       "price": 4.5,
       "rating": 4.2,
       "numReviews": 34,
-      "category": "Boots"
+      "category": "Boots",
+      "brand" : "Puma",
+      "color" : "Brown"
     },
     {
       "isNew": true,
@@ -25,7 +29,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Sneakers"
+      "category": "Sneakers",
+      "brand" : "Puma",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -34,7 +40,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Sneakers"
+      "category": "Sneakers",
+      "brand" : "Adidas",
+      "color" : "Yellow"
     },
     {
       "isNew": true,
@@ -43,7 +51,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Sports"
+      "category": "Sports",
+      "brand" : "Adidas",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -52,7 +62,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Training"
+      "category": "Training",
+      "brand" : "Addidas",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -61,7 +73,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Adidas",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -70,7 +84,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -79,7 +95,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -88,7 +106,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Blue"
     },
     {
       "isNew": true,
@@ -97,7 +117,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -106,7 +128,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Brown"
     },
     {
       "isNew": true,
@@ -115,7 +139,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Adidas",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -124,7 +150,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Adidas",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -133,7 +161,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -142,7 +172,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Training"
+      "category": "Training",
+      "brand" : "Puma",
+      "color" : "Blue"
     },
     {
       "isNew": true,
@@ -151,7 +183,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Adidas",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -160,7 +194,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Blue"
     },
     {
       "isNew": true,
@@ -169,7 +205,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -178,7 +216,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Adidas",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -187,7 +227,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Black"
     },
     {
       "isNew": true,
@@ -196,7 +238,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Yellow"
     },
     {
       "isNew": true,
@@ -205,7 +249,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Nike",
+      "color" : "Brown"
     },
     {
       "isNew": true,
@@ -214,7 +260,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Red"
     },
     {
       "isNew": true,
@@ -223,7 +271,9 @@
       "price": 4.5,
       "rating": 2,
       "numReviews": 34,
-      "category": "Formal"
+      "category": "Formal",
+      "brand" : "Puma",
+      "color" : "Black"
     }
   ]
 }
