@@ -47,6 +47,10 @@ function Rating({ rating, numReviews }) {
 }
 
 function ProductCard() {
+
+
+
+
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -67,6 +71,8 @@ function ProductCard() {
       // _limit: 9,
       page: currentPage,
       category: searchParams.getAll("category"),
+      brand: searchParams.getAll("brand"),
+      color: searchParams.getAll("color"),
     },
   };
 
@@ -89,7 +95,7 @@ function ProductCard() {
       p="10"
       w="80%"
       bgGradient={
-        "linear-gradient(to bottom, #071951, #545984, #545984, #9ea2b7, #9ea2b7, #b0b3c3, #c2c4ce, #d4d5da, #d4d5da, #d4d5da, #d4d5da, #d4d5da);"
+        "linear-gradient(to bottom, #071951, #31386a, #545984, #9ea2b7, #9ea2b7, #b0b3c3, #c2c4ce, #d4d5da, #d4d5da, #d4d5da, #d4d5da, #d4d5da);"
       }
       border="1px solid white"
       gap="10"
