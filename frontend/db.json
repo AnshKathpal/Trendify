@@ -10,7 +10,8 @@
       "numReviews": 34,
       "category": "Casuals",
       "brand" : "Puma",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9"]
     },
     {
       "id" : 2,
@@ -22,7 +23,8 @@
       "numReviews": 34,
       "category": "Boots",
       "brand" : "Puma",
-      "color" : "Brown"
+      "color" : "Brown",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 3,
@@ -34,7 +36,8 @@
       "numReviews": 34,
       "category": "Sneakers",
       "brand" : "Puma",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 4,
@@ -46,7 +49,8 @@
       "numReviews": 34,
       "category": "Sneakers",
       "brand" : "Adidas",
-      "color" : "Yellow"
+      "color" : "Yellow",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 5,
@@ -58,7 +62,8 @@
       "numReviews": 34,
       "category": "Sports",
       "brand" : "Adidas",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 6,
@@ -70,7 +75,8 @@
       "numReviews": 34,
       "category": "Training",
       "brand" : "Addidas",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 7,
@@ -82,7 +88,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Adidas",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 8,
@@ -94,7 +101,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 9,
@@ -106,7 +114,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 10,
@@ -118,7 +127,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Blue"
+      "color" : "Blue",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "id" : 11,
@@ -130,7 +140,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -141,7 +152,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Brown"
+      "color" : "Brown",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -152,7 +164,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Adidas",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -163,7 +176,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Adidas",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -174,7 +188,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -185,7 +200,8 @@
       "numReviews": 34,
       "category": "Training",
       "brand" : "Puma",
-      "color" : "Blue"
+      "color" : "Blue",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -196,7 +212,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Adidas",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -207,7 +224,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Blue"
+      "color" : "Blue",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -218,7 +236,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -229,7 +248,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Adidas",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -240,7 +260,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -251,7 +272,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Yellow"
+      "color" : "Yellow",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -262,7 +284,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Nike",
-      "color" : "Brown"
+      "color" : "Brown",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -273,7 +296,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Red"
+      "color" : "Red",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     },
     {
       "isNew": true,
@@ -284,7 +308,8 @@
       "numReviews": 34,
       "category": "Formal",
       "brand" : "Puma",
-      "color" : "Black"
+      "color" : "Black",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
     }
   ]
 }
