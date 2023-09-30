@@ -22,9 +22,14 @@ import { MdLocalShipping } from "react-icons/md";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../../redux/Products/action";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Footer } from "../Footer";
+import ReactWhatsapp from "react-whatsapp";
 
 export default function ProductDescription() {
+
+const [selectedSize,setSelectedSize] = useState(null)
+
   const { id, imageURL } = useParams();
   console.log(id);
 
@@ -35,18 +40,28 @@ export default function ProductDescription() {
 
   useEffect(() => {
     dispatch(getProducts());
-  }, []);
+  }, [selectedSize]);
 
   const product = data.find((data) => data.id === parseInt(id));
+  console.log(product);
+
+  const handleSelectSize = (e) => {
+    setSelectedSize(e.target.value)
+    console.log(e.target.value);
+  };
+
+  console.log(selectedSize)
 
   return (
-    <Container maxW={"7xl"} pos="relative" top="10vh">
+    <Box pos="relative" top="10vh">
       <SimpleGrid
+        w="80%"
+        m="auto"
         columns={{ base: 1, lg: 2 }}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 18, md: 24 }}
       >
-        <Flex>
+        <Flex direction={"column"} gap="5">
           <Image
             rounded={"md"}
             alt={"product image"}
@@ -56,6 +71,35 @@ export default function ProductDescription() {
             w={"100%"}
             h={{ base: "100%", sm: "400px", lg: "500px" }}
           />
+          <Flex gap="5">
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.imageURL}
+              fit={"cover"}
+              align={"center"}
+              w={"35%"}
+              h={{ base: "100%", sm: "400px", lg: "200px" }}
+            />
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.imageURL}
+              fit={"cover"}
+              align={"center"}
+              w={"35%"}
+              h={{ base: "100%", sm: "400px", lg: "200px" }}
+            />
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={product.imageURL}
+              fit={"cover"}
+              align={"center"}
+              w={"35%"}
+              h={{ base: "100%", sm: "400px", lg: "200px" }}
+            />
+          </Flex>
         </Flex>
         <Stack spacing={{ base: 6, md: 10 }}>
           <Box as={"header"}>
@@ -71,7 +115,7 @@ export default function ProductDescription() {
               fontWeight={300}
               fontSize={"2xl"}
             >
-              $350.00 USD
+              {product.price}
             </Text>
           </Box>
 
@@ -108,21 +152,30 @@ export default function ProductDescription() {
                 textTransform={"uppercase"}
                 mb={"4"}
               >
-                Features
+                Size Available
               </Text>
 
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-                <List spacing={2}>
-                  <ListItem>Chronograph</ListItem>
-                  <ListItem>Master Chronometer Certified</ListItem>{" "}
-                  <ListItem>Tachymeter</ListItem>
-                </List>
-                <List spacing={2}>
-                  <ListItem>Anti‑magnetic</ListItem>
-                  <ListItem>Chronometer</ListItem>
-                  <ListItem>Small seconds</ListItem>
-                </List>
-              </SimpleGrid>
+              <Flex
+                justify={"space-between"}
+                alignItems="center"
+                w="100%"
+                h="7vh"
+              >
+                {product.size.map((item) => (
+                  <Button
+                  _hover = {{border : "1px solid blue"}}
+                  value = {item}
+                    onClick={handleSelectSize}
+                    borderRadius={"50%"}
+                    w="60px"
+                    h="60px"
+                    bg = {selectedSize == item ? "grey" : "white"}
+                    color = {selectedSize == item ? "white" : "black"}
+                  >
+                    {item}
+                  </Button>
+                ))}
+              </Flex>
             </Box>
             <Box>
               <Text
@@ -138,74 +191,54 @@ export default function ProductDescription() {
               <List spacing={2}>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Between lugs:
+                    Brand:
                   </Text>{" "}
-                  20 mm
+                  {product.brand}
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Bracelet:
+                    Category:
                   </Text>{" "}
-                  leather strap
+                  {product.category}
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Case:
+                    Color:
                   </Text>{" "}
-                  Steel
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Case diameter:
-                  </Text>{" "}
-                  42 mm
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Dial color:
-                  </Text>{" "}
-                  Black
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Crystal:
-                  </Text>{" "}
-                  Domed, scratch‑resistant sapphire crystal with anti‑reflective
-                  treatment inside
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    Water resistance:
-                  </Text>{" "}
-                  5 bar (50 metres / 167 feet){" "}
+                  {product.color}
                 </ListItem>
               </List>
             </Box>
           </Stack>
 
-          <Button
-            rounded={"none"}
-            w={"full"}
-            mt={8}
-            size={"lg"}
-            py={"7"}
-            bg={useColorModeValue("gray.900", "gray.50")}
-            color={useColorModeValue("white", "gray.900")}
-            textTransform={"uppercase"}
-            _hover={{
-              transform: "translateY(2px)",
-              boxShadow: "lg",
-            }}
+          <ReactWhatsapp
+            number="+91 8707487031"
+            message={`Hi!, I'm Interested in ${product.name} of size ${selectedSize}`}
           >
-            Add to cart
-          </Button>
-
+            <Button
+              rounded={"none"}
+              w={"full"}
+              mt={8}
+              size={"lg"}
+              py={"7"}
+              bg={useColorModeValue("gray.900", "gray.50")}
+              color={useColorModeValue("white", "gray.900")}
+              textTransform={"uppercase"}
+              _hover={{
+                transform: "translateY(2px)",
+                boxShadow: "lg",
+              }}
+            >
+              Add to cart
+            </Button>
+          </ReactWhatsapp>
           <Stack direction="row" alignItems="center" justifyContent={"center"}>
             <MdLocalShipping />
             <Text>2-3 business days delivery</Text>
           </Stack>
         </Stack>
       </SimpleGrid>
-    </Container>
+      <Footer />
+    </Box>
   );
 }
