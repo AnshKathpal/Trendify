@@ -25,10 +25,10 @@ import { getProducts } from "../../redux/Products/action";
 import { useEffect, useState } from "react";
 import { Footer } from "../Footer";
 import ReactWhatsapp from "react-whatsapp";
+import ReactImageMagnify from "react-image-magnify";
 
 export default function ProductDescription() {
-
-const [selectedSize,setSelectedSize] = useState(null)
+  const [selectedSize, setSelectedSize] = useState(null);
 
   const { id, imageURL } = useParams();
   console.log(id);
@@ -46,14 +46,16 @@ const [selectedSize,setSelectedSize] = useState(null)
   console.log(product);
 
   const handleSelectSize = (e) => {
-    setSelectedSize(e.target.value)
+    setSelectedSize(e.target.value);
     console.log(e.target.value);
   };
 
-  console.log(selectedSize)
+  console.log(selectedSize);
 
   return (
-    <Box pos="relative" top="10vh">
+    <Box pos="relative" top="10vh" bgGradient={
+      "linear-gradient(to bottom, #080824, #202654, #545984,#9ea2b7, #9ea2b7, #b0b3c3, #c2c4ce, #d4d5da, #d4d5da, #d4d5da, #d4d5da, #d4d5da);"
+    }>
       <SimpleGrid
         w="80%"
         m="auto"
@@ -106,16 +108,18 @@ const [selectedSize,setSelectedSize] = useState(null)
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
+              fontSize={{ base: "2xl", sm: "4xl", lg: "4xl" }}
+              color = "#ECB365"
+              fontFamily={"'Dela Gothic One', cursive;"}
             >
               {product.name}
             </Heading>
             <Text
-              color={useColorModeValue("gray.900", "gray.400")}
               fontWeight={300}
               fontSize={"2xl"}
+              color = "#ECB365"
             >
-              {product.price}
+              ₹{product.price}
             </Text>
           </Box>
 
@@ -147,7 +151,7 @@ const [selectedSize,setSelectedSize] = useState(null)
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
-                color={useColorModeValue("yellow.500", "yellow.300")}
+                color = "#ECB365"
                 fontWeight={"500"}
                 textTransform={"uppercase"}
                 mb={"4"}
@@ -163,14 +167,14 @@ const [selectedSize,setSelectedSize] = useState(null)
               >
                 {product.size.map((item) => (
                   <Button
-                  _hover = {{border : "1px solid blue"}}
-                  value = {item}
+                    _hover={{ border: "1px solid blue" }}
+                    value={item}
                     onClick={handleSelectSize}
                     borderRadius={"50%"}
                     w="60px"
                     h="60px"
-                    bg = {selectedSize == item ? "grey" : "white"}
-                    color = {selectedSize == item ? "white" : "black"}
+                    bg={selectedSize == item ? "grey" : "white"}
+                    color={selectedSize == item ? "white" : "black"}
                   >
                     {item}
                   </Button>
@@ -218,7 +222,7 @@ const [selectedSize,setSelectedSize] = useState(null)
             <Button
               rounded={"none"}
               w={"full"}
-              mt={8}
+              // mt={8}
               size={"lg"}
               py={"7"}
               bg={useColorModeValue("gray.900", "gray.50")}
@@ -229,9 +233,24 @@ const [selectedSize,setSelectedSize] = useState(null)
                 boxShadow: "lg",
               }}
             >
-              Add to cart
+              Order on Whatsapp
             </Button>
           </ReactWhatsapp>
+          <Button
+            rounded={"none"}
+            w={"full"}
+            size={"lg"}
+            py={"7"}
+            bg={useColorModeValue("gray.900", "gray.50")}
+            color={useColorModeValue("white", "gray.900")}
+            textTransform={"uppercase"}
+            _hover={{
+              transform: "translateY(2px)",
+              boxShadow: "lg",
+            }}
+          >
+            Add to cart
+          </Button>
           <Stack direction="row" alignItems="center" justifyContent={"center"}>
             <MdLocalShipping />
             <Text>2-3 business days delivery</Text>

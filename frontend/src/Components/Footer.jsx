@@ -4,6 +4,7 @@ import insta from "../images/instagram.png";
 import fb from "../images/facebook.png";
 import whatsapp from "../images/whatsapp.png";
 import styled from "styled-components";
+import trendifylogo from "../images/trendifyLogoNew.png"
 
 export const Footer = ({mt}) => {
   return (
@@ -21,8 +22,11 @@ export const Footer = ({mt}) => {
           justify={{ base: "center", lg: "center" }}
           align={{ base: "center", lg: "center" }}
           direction={"column"}
+          gap = "5"
         >
-          <Text fontSize={{ base: "60px", lg: "100px" }}>Trendify</Text>
+          <Box w="70%" >
+            <img src={trendifylogo} alt="" />
+          </Box>
           <Flex w="100%" justify={"space-evenly"}>
             <Insta src={insta} alt="" />
             <Facebook src={fb} alt="" />

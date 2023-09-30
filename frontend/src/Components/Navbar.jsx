@@ -1,6 +1,7 @@
 import { Flex, Text, Box, Button } from "@chakra-ui/react";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import Trendify from "../images/trendifyLogoNew.png"
 
 export const Navbar = () => {
   return (
@@ -16,7 +17,9 @@ export const Navbar = () => {
         zIndex="100"
         display={{ base: "none", lg: "flex" }}
       >
-        <Box>Trendify</Box>
+        <Box h = "95%" pos={"relative"} left = "5%" top = "2%" >
+          <img src={Trendify} alt="" style={{height : "100%"}} />
+        </Box>
         <Flex w="50%" justify={"space-evenly"} align="center">
           <Link to="/">
             <Text
