@@ -1,9 +1,10 @@
 import { Flex, Text, Box, Button } from "@chakra-ui/react";
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div style={{position : "relative"}}>
+    <div style={{ position: "relative" }}>
       <Flex
         justify={"space-between"}
         color="white"
@@ -12,20 +13,59 @@ export const Navbar = () => {
         h="10vh"
         align="center"
         pos={"fixed"}
-        zIndex = "100"
-        display={{base : "none", lg : "flex"}}
+        zIndex="100"
+        display={{ base: "none", lg: "flex" }}
       >
         <Box>Trendify</Box>
-        <Flex
-          w="50%"
-          justify={"space-evenly"}
-          align="center"
-        >
-          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px" >Home</Text>
-          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">Products</Text>
-          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">About Us</Text>
-          <Text border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px">Contact</Text>
-          <Button border={"1px solid white"} w = "15%" p = "2" borderRadius = "20px 20px 20px 20px" >Login</Button>
+        <Flex w="50%" justify={"space-evenly"} align="center">
+          <Link to="/">
+            <Text
+              border={"1px solid white"}
+              w="120px"
+              p="2"
+              borderRadius="20px 20px 20px 20px"
+            >
+              Home
+            </Text>
+          </Link>
+          <Link to="/products">
+            <Text
+              border={"1px solid white"}
+              w="120px"
+              p="2"
+              borderRadius="20px 20px 20px 20px"
+            >
+              Products
+            </Text>
+          </Link>
+          <Link>
+            <Text
+              border={"1px solid white"}
+              w="120px"
+              p="2"
+              borderRadius="20px 20px 20px 20px"
+            >
+              About Us
+            </Text>
+          </Link>
+          <Link>
+            <Text
+              border={"1px solid white"}
+              w="120px"
+              p="2"
+              borderRadius="20px 20px 20px 20px"
+            >
+              Contact
+            </Text>
+          </Link>
+          <Button
+            border={"1px solid white"}
+            w="120px"
+            p="2"
+            borderRadius="20px 20px 20px 20px"
+          >
+            Login
+          </Button>
         </Flex>
       </Flex>
     </div>

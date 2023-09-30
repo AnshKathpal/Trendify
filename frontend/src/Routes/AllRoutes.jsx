@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import ProductDescription from "../Components/ProductPage-Components/ProductDescription";
 import { AboutUs } from "../Pages/AboutUs";
 import { Contact } from "../Pages/Contact";
 import { HomePage } from "../Pages/HomePage";
@@ -12,6 +13,7 @@ export const AllRoutes = () => {
       <Route path="/products" element={<Products />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/product-description/:id" element={<ProductDescription />} />
       <Route path="*" element={<h1>404 Error, No Page Found</h1>} />
     </Routes>
   );

@@ -14,9 +14,10 @@ import {
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import  Pagination  from "./Pagination";
 import { getProducts } from "../../redux/Products/action";
+import { Sidebar } from "./Sidebar";
 
 function Rating({ rating, numReviews }) {
   return (
@@ -46,7 +47,7 @@ function Rating({ rating, numReviews }) {
   );
 }
 
-function ProductCard() {
+function ProductCard({width}) {
 
 
 
@@ -88,16 +89,16 @@ function ProductCard() {
   };
 
   return (
-    <>
-    
+    <Flex direction={"column"}>
     <Grid
       gridTemplateColumns={"repeat(3,1fr)"}
       p="10"
-      w="80%"
+      // w="80%"
+      w = {width}
       bgGradient={
         "linear-gradient(to bottom, #071951, #31386a, #545984, #9ea2b7, #9ea2b7, #b0b3c3, #c2c4ce, #d4d5da, #d4d5da, #d4d5da, #d4d5da, #d4d5da);"
       }
-      border="1px solid white"
+      border="4px solid white"
       gap="10"
       h="auto"
       position={"relative"}
@@ -119,7 +120,7 @@ function ProductCard() {
                 shadow="lg"
                 bg="white"
               >
-                {el.isNew && (
+                {/* {el.isNew && (
                   <Circle
                     size="10px"
                     position="absolute"
@@ -127,7 +128,7 @@ function ProductCard() {
                     right={2}
                     bg="red.200"
                   />
-                )}
+                )} */}
 
                 <Image
                   src={el.imageURL}
@@ -180,7 +181,8 @@ function ProductCard() {
                       color={"gray.800"}
                       fontSize={"1.2em"}
                     >
-                      <chakra.a href={"#"} display={"flex"}>
+                      <Link to = {`/product-description/${el.id}`} >
+                      <chakra.a display={"flex"}>
                         <Icon
                           as={FiShoppingCart}
                           h={7}
@@ -188,6 +190,7 @@ function ProductCard() {
                           alignSelf={"center"}
                         />
                       </chakra.a>
+                      </Link>
                     </Tooltip>
                   </Flex>
 
@@ -206,16 +209,16 @@ function ProductCard() {
           }
           return null; // Render nothing for items outside the range
         })}
-        <Box border = "1px solid red">
+    </Grid>
+    <Box>
      <Pagination
        currentPage={currentPage}
        totalPages={Math.ceil(totalProducts/itemsPerPage)}
        onPageChange={handlePageChange}
      />
        </Box>
-    </Grid>
      
-       </>
+       </Flex>
   );
 }
 
