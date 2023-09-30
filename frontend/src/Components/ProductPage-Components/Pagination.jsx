@@ -7,7 +7,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   };
 
   return (
-    <Box>
+    <Box p = "5" >
       {[...Array(totalPages)].map((_, i) => {
         const page = i + 1;
         return (

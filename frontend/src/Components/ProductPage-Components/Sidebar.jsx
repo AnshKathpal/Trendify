@@ -7,6 +7,8 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  Select,
+  Option,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import ProductCard from "./ProductCard";
@@ -94,13 +96,12 @@ export const Sidebar = () => {
   return (
     <>
       <Flex pos={"relative"} top="10vh">
-        <Flex border="1px solid red" w="20%" gap={"10"} direction={"column"}>
-          <Text border="1px solid blue" fontSize={"30px"}>
+        <Flex w="20%" gap={"10"} direction={"column"}>
+          <Text mt="5vh" fontSize={"30px"}>
             Filters
           </Text>
-
           <Accordion allowMultiple>
-            <AccordionItem>
+            <AccordionItem mb="10">
               <h2>
                 <AccordionButton>
                   <Box as="span" flex="1" textAlign="center">
@@ -128,98 +129,69 @@ export const Sidebar = () => {
               </AccordionPanel>
             </AccordionItem>
 
-            <AccordionItem>
+            <AccordionItem mb="10">
               <h2>
                 <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
-                    Section 2 title
+                  <Box as="span" flex="1" textAlign="center">
+                    Brand
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                <Flex direction="column" gap="2">
+                  {brandArr.map((el) => (
+                    <Flex pl="35%" gap="5" align={"center"}>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        value={el}
+                        onChange={handleBrand}
+                        checked={brand.includes(el)}
+                      />
+                      <label>{el}</label>
+                    </Flex>
+                  ))}
+                </Flex>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem mb="10">
+              <h2>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="center">
+                    Colors
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Flex direction="column" gap="2">
+                  {colorsArr.map((el) => (
+                    <Flex pl="35%" gap="5" align={"center"}>
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        value={el}
+                        onChange={handleColor}
+                        checked={color.includes(el)}
+                      />
+                      <label>{el}</label>
+                    </Flex>
+                  ))}
+                </Flex>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
 
-          <Text
-            border={"1px solid red"}
-            fontSize={"24px"}
-            onClick={() => handleToggleVisibilityCategory()}
-          >
-            Categories
+          <Text mt="5vh" fontSize={"30px"}>
+            Sort
           </Text>
-          <Flex
-            display={display ? "flex" : "inline"}
-            visibility={visiblityCat ? "visible" : "hidden"}
-            border="1px solid blue"
-            direction={"column"}
-            gap="2"
-          >
-            {categoriesArr.map((el) => (
-              <Box>
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  value={el}
-                  onChange={handleCategory}
-                  checked={category.includes(el)}
-                />
-                <label>{el}</label>
-              </Box>
-            ))}
-          </Flex>
-          <Text
-            fontSize={"24px"}
-            border="1px solid red"
-            onClick={() => handleToggleVisibilityBrand()}
-          >
-            Brand
-          </Text>
-          <Flex
-            border={"1px solid red"}
-            display={display ? "flex" : "inline"}
-            visibility={visiblityBrand ? "visible" : "hidden"}
-            direction="column"
-            gap="2"
-          >
-            {brandArr.map((el) => (
-              <Box>
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  value={el}
-                  onChange={handleBrand}
-                  checked={brand.includes(el)}
-                />
-                <label>{el}</label>
-              </Box>
-            ))}
-          </Flex>
-          <Flex border={"1px solid red"} direction="column" gap="2">
-            <Text fontSize={"24px"}>Colors</Text>
-            {colorsArr.map((el) => (
-              <Box>
-                <input
-                  type="checkbox"
-                  name=""
-                  id=""
-                  value={el}
-                  onChange={handleColor}
-                  checked={color.includes(el)}
-                />
-                <label>{el}</label>
-              </Box>
-            ))}
-          </Flex>
         </Flex>
-        <ProductCard />
+        <Flex flex="3" justifyContent="center">
+          <ProductCard width="100%" />
+        </Flex>
       </Flex>
     </>
   );
