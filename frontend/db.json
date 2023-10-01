@@ -4,14 +4,16 @@
       "id" : 1,
       "isNew": true,
       "imageURL": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-      "name": "Wayfarer Classic",
-      "price": 4.5,
+      "name": "Zion Williamson Air Jordan",
+      "price": 3000,
       "rating": 4.2,
       "numReviews": 34,
       "category": "Casuals",
-      "brand" : "Puma",
-      "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9"]
+      "brand" : "Nike",
+      "color" : "Brown/ Beige/ Green",
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 2,
@@ -24,7 +26,9 @@
       "category": "Boots",
       "brand" : "Puma",
       "color" : "Brown",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 3,
@@ -37,7 +41,9 @@
       "category": "Sneakers",
       "brand" : "Puma",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 4,
@@ -50,7 +56,9 @@
       "category": "Sneakers",
       "brand" : "Adidas",
       "color" : "Yellow",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 5,
@@ -63,7 +71,9 @@
       "category": "Sports",
       "brand" : "Adidas",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 6,
@@ -76,7 +86,9 @@
       "category": "Training",
       "brand" : "Addidas",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 7,
@@ -89,7 +101,9 @@
       "category": "Formal",
       "brand" : "Adidas",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 8,
@@ -102,7 +116,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 9,
@@ -115,7 +131,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 10,
@@ -128,7 +146,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Blue",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "id" : 11,
@@ -141,7 +161,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -153,7 +175,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Brown",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -165,7 +189,9 @@
       "category": "Formal",
       "brand" : "Adidas",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -177,7 +203,9 @@
       "category": "Formal",
       "brand" : "Adidas",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -189,7 +217,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -201,7 +231,9 @@
       "category": "Training",
       "brand" : "Puma",
       "color" : "Blue",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -213,7 +245,9 @@
       "category": "Formal",
       "brand" : "Adidas",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -225,7 +259,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Blue",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -237,7 +273,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -249,7 +287,9 @@
       "category": "Formal",
       "brand" : "Adidas",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -261,7 +301,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -273,7 +315,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Yellow",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -285,7 +329,9 @@
       "category": "Formal",
       "brand" : "Nike",
       "color" : "Brown",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -297,7 +343,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Red",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     },
     {
       "isNew": true,
@@ -309,7 +357,9 @@
       "category": "Formal",
       "brand" : "Puma",
       "color" : "Black",
-      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"]
+      "size" : ["UK 4", "UK 5", "UK 6", "UK 7", "UK 8", "UK 9", "UK 10", "UK 11"],
+      "description1" : "x Zion Williamson Air Jordan 1 Low OG 'Voodoo' sneakers",
+      "description2" : "The Air Jordan 1 Low “Voodoo” is a special New Orleans-inspired colourway of the classic sneaker that was released alongside basketball star Zion Williamson’s Nike Zion 2 of the same nickname. This sneaker is inspired by voodoo dolls, a fixture of New Orleans’ lore."
     }
   ]
 }

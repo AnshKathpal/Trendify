@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import lv from "../images/lv-shoe.png";
 import wave from "../images/wave.png";
+import { PostShoes } from "./Admin/PostShoes";
 
 export const Header = ({src,text1,text2}) => {
   return (

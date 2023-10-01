@@ -23,3 +23,16 @@ import {
 
 
   }
+
+
+
+  export const postProducts = (obj) => (dispatch) => {
+    dispatch({type : PRODUCT_LOADING})
+    axios.post("http://localhost:8080/products",obj)
+    .then((res) => {
+      dispatch({type : POST_PRODUCT_SUCCESS, payload : res.data})
+    })
+    .catch((err) => {
+      dispatch({type : PRODUCT_ERROR })
+    })
+  }
