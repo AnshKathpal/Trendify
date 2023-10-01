@@ -110,7 +110,7 @@ export default function ProductDescription() {
               fontWeight={600}
               fontSize={{ base: "2xl", sm: "4xl", lg: "4xl" }}
               color = "#ECB365"
-              fontFamily={"'Dela Gothic One', cursive;"}
+              fontFamily={"'Lilita One', cursive"}
             >
               {product.name}
             </Heading>
@@ -128,30 +128,26 @@ export default function ProductDescription() {
             direction={"column"}
             divider={
               <StackDivider
-                borderColor={useColorModeValue("gray.200", "gray.600")}
+                borderColor={useColorModeValue("#080824", "#080824")}
               />
             }
           >
             <VStack spacing={{ base: 4, sm: 6 }}>
               <Text
-                color={useColorModeValue("gray.500", "gray.400")}
+              color = "white"
                 fontSize={"2xl"}
                 fontWeight={"300"}
               >
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore
+                {product.description1}
               </Text>
-              <Text fontSize={"lg"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                aliquid amet at delectus doloribus dolorum expedita hic, ipsum
-                maxime modi nam officiis porro, quae, quisquam quos
-                reprehenderit velit? Natus, totam.
+              <Text fontSize={"lg"} color = "#080824">
+              {product.description2}
               </Text>
             </VStack>
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
-                color = "#ECB365"
+                color = "#080824"
                 fontWeight={"500"}
                 textTransform={"uppercase"}
                 mb={"4"}
@@ -167,14 +163,14 @@ export default function ProductDescription() {
               >
                 {product.size.map((item) => (
                   <Button
-                    _hover={{ border: "1px solid blue" }}
+                    _hover={{ border: "1px solid #080824" }}
                     value={item}
                     onClick={handleSelectSize}
                     borderRadius={"50%"}
                     w="60px"
                     h="60px"
-                    bg={selectedSize == item ? "grey" : "white"}
-                    color={selectedSize == item ? "white" : "black"}
+                    bg={selectedSize == item ? "#080824" : "white"}
+                    color={selectedSize == item ? "white" : "#080824"}
                   >
                     {item}
                   </Button>
@@ -184,7 +180,7 @@ export default function ProductDescription() {
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
-                color={useColorModeValue("yellow.500", "yellow.300")}
+                color={useColorModeValue("#080824", "#080824")}
                 fontWeight={"500"}
                 textTransform={"uppercase"}
                 mb={"4"}
@@ -225,7 +221,7 @@ export default function ProductDescription() {
               // mt={8}
               size={"lg"}
               py={"7"}
-              bg={useColorModeValue("gray.900", "gray.50")}
+              bg={useColorModeValue("#080824", "#080824")}
               color={useColorModeValue("white", "gray.900")}
               textTransform={"uppercase"}
               _hover={{
@@ -241,7 +237,7 @@ export default function ProductDescription() {
             w={"full"}
             size={"lg"}
             py={"7"}
-            bg={useColorModeValue("gray.900", "gray.50")}
+            bg={useColorModeValue("#080824", "#080824")}
             color={useColorModeValue("white", "gray.900")}
             textTransform={"uppercase"}
             _hover={{
