@@ -2,12 +2,7 @@ import React from 'react'
 
 export const PostShoes = () => {
   return (
-    <div mt = "30vh">
-
-
-
-
-
+    <div mt = "60vh">
     <form action="" border = "1px solid red" >
         <label htmlFor="">Name</label>
         <input type="text" placeholder='Enter Image' name="" id="" />
