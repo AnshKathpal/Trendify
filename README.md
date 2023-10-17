@@ -64,11 +64,7 @@ Contributions to the Trendify e-commerce website are welcome. Please follow the 
 This project is open-source and available under the [MIT License](LICENSE).
 
 ## Author
-- [Your Name]
+- Ansh Kathpal
 
 ## Acknowledgments
 Special thanks to the React, Redux, and Express.js communities for providing the tools and resources to create this seamless e-commerce website.
-
----
-
-Customize this README to match your specific website's details, including your website's name, styling, and additional features if available.
