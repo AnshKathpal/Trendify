@@ -1,9 +1,19 @@
 import { Flex, Text, Box, Button } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Trendify from "../images/trendifyLogoNew.png"
+import Trendify from "../images/trendifyLogoNew.png";
 
 export const Navbar = () => {
+  const [dropdown, setDropdown] = useState("hidden");
+
+  const handleVisibility = () => {
+    if (dropdown == "hidden") {
+      setDropdown("visible");
+    } else {
+      setDropdown("hidden");
+    }
+  };
+
   return (
     <div style={{ position: "relative" }}>
       <Flex
@@ -17,8 +27,8 @@ export const Navbar = () => {
         zIndex="100"
         display={{ base: "none", lg: "flex" }}
       >
-        <Box h = "95%" pos={"relative"} left = "5%" top = "2%" >
-          <img src={Trendify} alt="" style={{height : "100%"}} />
+        <Box h="95%" pos={"relative"} left="5%" top="2%">
+          <img src={Trendify} alt="" style={{ height: "100%" }} />
         </Box>
         <Flex w="50%" justify={"space-evenly"} align="center">
           <Link to="/">
@@ -31,16 +41,84 @@ export const Navbar = () => {
               Home
             </Text>
           </Link>
-          <Link to="/products">
+
+          <Box>
             <Text
               border={"1px solid white"}
+              position="relative"
               w="120px"
               p="2"
               borderRadius="20px 20px 20px 20px"
+              onClick={handleVisibility}
             >
               Products
             </Text>
-          </Link>
+            <Flex
+              borderRadius="20px 20px 20px 20px"
+              pos="absolute"
+              visibility={dropdown}
+              flexDirection="column"
+              top="80%"
+              bg="white"
+              width="15%"
+              height={dropdown ? "auto" : "0"}
+              opacity={dropdown ? 1 : 0}
+              overflow="hidden"
+              transition="height 0.3s ease-in-out, opacity 0.3s ease-in-out"
+              fontSize={"lg"}
+              gap="2"
+              p="2"
+            >
+              <Link to="/shoes">
+                <Text
+                  _hover={{
+                    backgroundColor: "rgb(6,26,80)",
+                    color: "white",
+                    transition: "ease-in-out",
+                  }}
+
+                  borderRadius="20px 20px 20px 20px"
+                  color="black"
+                  onClick={() => setDropdown("hidden")}
+                  textAlign = "left"
+                  pl = "3"
+                >
+                  Trendy Shoes
+                </Text>
+              </Link>
+              <Text
+              textAlign = "left"
+              pl = "3"
+              _hover={{
+                backgroundColor: "rgb(6,26,80)",
+                color: "white",
+                transition: "ease-in-out",
+              }}
+
+                borderRadius="20px 20px 20px 20px"
+                color="black"
+                onClick={() => setDropdown("hidden")}
+              >
+                Trendy Cloths
+              </Text>
+              <Text
+              textAlign = "left"
+              pl = "3"
+              _hover={{
+                backgroundColor: "rgb(6,26,80)",
+                color: "white",
+                transition: "ease-in-out",
+              }}
+              onClick={() => setDropdown("hidden")}
+
+                borderRadius="20px 20px 20px 20px"
+                color="black"
+              >
+                Trendy Accessories
+              </Text>
+            </Flex>
+          </Box>
+
           <Link>
             <Text
               border={"1px solid white"}
