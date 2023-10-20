@@ -120,20 +120,12 @@ function ProductCard({width}) {
                 shadow="lg"
                 bg="white"
               >
-                {/* {el.isNew && (
-                  <Circle
-                    size="10px"
-                    position="absolute"
-                    top={2}
-                    right={2}
-                    bg="red.200"
-                  />
-                )} */}
-
                 <Image
                   src={el.imageURL}
                   alt={`Picture of ${el.name}`}
                   roundedTop="lg"
+                  fit={"cover"}
+                  align={"center"}
                 />
 
                 <Box p="6">
