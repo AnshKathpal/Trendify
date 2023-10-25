@@ -28,7 +28,9 @@ export const Navbar = () => {
         display={{ base: "none", lg: "flex" }}
       >
         <Box h="95%" pos={"relative"} left="5%" top="2%">
+        <Link to = "/">
           <img src={Trendify} alt="" style={{ height: "100%" }} />
+        </Link>
         </Box>
         <Flex w="50%" justify={"space-evenly"} align="center">
           <Link to="/">
