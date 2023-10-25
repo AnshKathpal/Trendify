@@ -86,6 +86,7 @@ export const Navbar = () => {
                   Trendy Shoes
                 </Text>
               </Link>
+              <Link to="/cloths">
               <Text
               textAlign = "left"
               pl = "3"
@@ -101,6 +102,8 @@ export const Navbar = () => {
               >
                 Trendy Cloths
               </Text>
+              </Link>
+              <Link to="/accessories">
               <Text
               textAlign = "left"
               pl = "3"
@@ -116,6 +119,7 @@ export const Navbar = () => {
               >
                 Trendy Accessories
               </Text>
+              </Link>
             </Flex>
           </Box>
 

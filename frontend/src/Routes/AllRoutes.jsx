@@ -6,12 +6,16 @@ import { AboutUs } from "../Pages/AboutUs";
 import { Contact } from "../Pages/Contact";
 import { HomePage } from "../Pages/HomePage";
 import { Products } from "../Pages/Products";
+import { ProductsAccessories } from "../Pages/ProductsAccessories";
+import { ProductsCloths } from "../Pages/ProductsCloths";
 
 export const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/shoes" element={<Products />} />
+      <Route path="/cloths" element={<ProductsCloths />} />
+      <Route path="/accessories" element={<ProductsAccessories />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/product-description/:id" element={<ProductDescription />} />
