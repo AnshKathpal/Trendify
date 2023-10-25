@@ -29,12 +29,13 @@ export const ProductsCloths = () => {
 
 
   const categoriesArr = [
-    "Casuals",
-    "Sneakers",
-    "Boots",
-    "Sports",
-    "Training",
-    "Formal",
+    "Jackets",
+    "Jeans",
+    "Joggers",
+    "Shirts",
+    "Sweatshirts",
+    "T-Shirts",
+    "Trousers",
   ];
   const brandArr = ["Puma", "Nike", "Adidas"];
   const colorsArr = ["Black", "Brown", "Yellow", "Red", "Blue"];

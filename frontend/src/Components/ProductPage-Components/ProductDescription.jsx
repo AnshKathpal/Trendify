@@ -212,7 +212,7 @@ export default function ProductDescription() {
           </Stack>
 
           <ReactWhatsapp
-            number="+91 8707487031"
+            number="+91 8448837130"
             message={`Hi!, I'm Interested in ${product.name} of size ${selectedSize}`}
           >
             <Button

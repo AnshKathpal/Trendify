@@ -3,6 +3,7 @@ import React from "react";
 import Shop1 from "../../images/shop1.jpeg";
 import Shop2 from "../../images/shop2.png";
 import Shop3 from "../../images/shop3.png";
+import {Link} from "react-router-dom"
 
 export const Shop = () => {
   return (
@@ -23,6 +24,8 @@ export const Shop = () => {
           p={{base : "5", lg : "10"}}
         >
           <Box bg="white" h="50vh" pos="relative" _hover={{".textShoes" : {visibility : "visible"} , ".imgShoes" : {transform : "scale(1.1)"}}}>
+            <Link to = "/shoes" >
+            
             <img
             className = "imgShoes"
               src={Shop1}
@@ -48,8 +51,11 @@ export const Shop = () => {
             >
               Trendy Shoes
             </Text>
+            </Link>
           </Box>
           <Box bg="black" h="50vh" pos="relative" _hover={{".textShoes" : {visibility : "visible"} , ".imgShoes" : {transform : "scale(1.1)"}}}>
+            <Link to = "/cloths" >
+            
             <img
             className = "imgShoes"
               src={Shop2}
@@ -74,8 +80,11 @@ export const Shop = () => {
             >
               Trendy Cloths
             </Text>
+            </Link>
           </Box>
           <Box bg="black" h="50vh" pos="relative" _hover={{".textShoes" : {visibility : "visible"} , ".imgShoes" : {transform : "scale(1.1)"}}}>
+            <Link to = "/accessories" >
+            
             <img
             className = "imgShoes"
               src={Shop3}
@@ -100,6 +109,7 @@ export const Shop = () => {
             >
               Trendy Accessories
             </Text>
+            </Link>
           </Box>
         </Grid>
       </Box>

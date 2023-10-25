@@ -1,19 +1,38 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
-import lv from "../images/lv-shoe.png";
+import sunglass from "../images/sunglass.png";
 import { Header } from "../Components/Header";
 import { Sidebar } from "../Components/ProductPage-Components/Sidebar";
 import { Footer } from "../Components/Footer";
 import ProductCardAccessories from "../Components/ProductPage-Components/ProductCardAccessories";
 
 export const ProductsAccessories = () => {
+
+
+  const boxStyles = {
+    pos : "absolute",
+    top: { base: '40%', lg: '22%' },
+    w: { base: '45%' },
+    left: { base: '8%', lg: '4%' },
+    zIndex: 1,
+  }
+
+  const imageStyles = {
+    objectFit: "cover",
+    filter: "drop-shadow(5px px 5px white)",
+  }
+
+
+
+
+
   const categoriesArr = [
-    "Casuals",
-    "Sneakers",
-    "Boots",
-    "Sports",
-    "Training",
-    "Formal",
+    "Bags",
+    "Belts",
+    "Bracelet",
+    "Sunglasses",
+    "Wallets",
+    "Watches",
   ];
   const brandArr = ["Puma", "Nike", "Adidas"];
   const colorsArr = ["Black", "Brown", "Yellow", "Red", "Blue"];
@@ -25,7 +44,7 @@ export const ProductsAccessories = () => {
 
   return (
     <>
-      <Header src={lv} text1="Your Feet," text2="Your Faishon" />
+      <Header imageStyles={imageStyles} boxStyles={boxStyles} src={sunglass} text1="Glamour In" text2="Accessories" />
       <Sidebar
         categories={categoriesArr}
         brands={brandArr}
