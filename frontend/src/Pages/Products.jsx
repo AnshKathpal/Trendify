@@ -10,6 +10,26 @@ import ProductCard from "../Components/ProductPage-Components/ProductCard"
 
 export const Products = () => {
 
+
+  const boxStyles = {
+    pos : "absolute",
+    top: { base: '40%', lg: '16%' },
+    w: { base: '90%' },
+    left: { base: '8%', lg: '4%' },
+    zIndex: 1,
+  }
+
+
+  const imageStyles = {
+    objectFit: "cover",
+    rotate: "15deg",
+    filter: "drop-shadow(5px px 5px white)",
+  }
+
+
+
+
+
   const categoriesArr = ["Casuals", "Sneakers", "Boots", "Sports", "Training", "Formal"];
   const brandArr = ["Puma", "Nike", "Adidas"];
   const colorsArr = ["Black", "Brown", "Yellow", "Red", "Blue"];
@@ -22,7 +42,7 @@ export const Products = () => {
 
   return (
     <>
-    <Header src = {lv} text1 = "Your Feet," text2 = "Your Faishon" />
+    <Header imageStyles={imageStyles} boxStyles={boxStyles} src = {lv} text1 = "Your Feet," text2 = "Your Faishon" />
     <Sidebar categories={categoriesArr} brands={brandArr} colors={colorsArr} initialData={initialData} ProductCardComponent = {ProductCard}  />
     <Footer mt = "10vh"/>
     </>
