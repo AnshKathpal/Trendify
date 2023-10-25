@@ -4,7 +4,7 @@ import lv from "../images/lv-shoe.png";
 import wave from "../images/wave.png";
 import { PostShoes } from "./Admin/PostShoes";
 
-export const Header = ({src,text1,text2}) => {
+export const Header = ({src,text1,text2,boxStyles,imageStyles}) => {
   return (
     <>
       <Flex
@@ -19,17 +19,21 @@ export const Header = ({src,text1,text2}) => {
         top="10vh"
       >
         <Box
-          pos="absolute"
-          top={{ base: "40%", lg: "16%" }}
-          w={{ base: "90%" }}
-          left={{ base: "8%", lg: "4%" }}
-          zIndex="1"
+
+        {...boxStyles}
+
+          // pos="absolute"
+          // top={{ base: "40%", lg: "16%" }}
+          // w={{ base: "90%" }}
+          // left={{ base: "8%", lg: "4%" }}
+          // zIndex="1"
         >
           <img
             style={{
-              objectFit: "cover",
-              rotate: "15deg",
-              filter: "drop-shadow(5px px 5px white)",
+              // objectFit: "cover",
+              // rotate: "15deg",
+              // filter: "drop-shadow(5px px 5px white)",
+              ...imageStyles
             }}
             src={src}
             alt=""
@@ -49,7 +53,7 @@ export const Header = ({src,text1,text2}) => {
             color={"white"}
           >
             {text1} <br />
-            <span style={{ color: "#ECB365" }}>{text2}</span>
+            <span  style={{ color: "#ECB365" }}>{text2}</span>
           </Text>
         </Flex>
         <Flex

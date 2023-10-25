@@ -47,7 +47,7 @@ function Rating({ rating, numReviews }) {
   );
 }
 
-function ProductCard({ width }) {
+function ProductCardAccessories({ width }) {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -207,4 +207,4 @@ function ProductCard({ width }) {
   );
 }
 
-export default ProductCard;
+export default ProductCardAccessories;

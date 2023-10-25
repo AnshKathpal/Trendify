@@ -7,38 +7,21 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Select,
-  Option,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
 
-export const Sidebar = () => {
-  const colorsArr = ["Black", "Brown", "Yellow", "Red", "Blue"];
-  const categoriesArr = [
-    "Casuals",
-    "Sneakers",
-    "Boots",
-    "Sports",
-    "Training",
-    "Formal",
-  ];
-  const brandArr = ["Puma", "Nike", "Adidas"];
-
+export const Sidebar = ({ categories, brands, colors, initialData, ProductCardComponent }) => {
   const [visiblityCat, setVisiblityCat] = useState(false);
   const [display, setDisplay] = useState(false);
   const [visiblityBrand, setVisiblityBrand] = useState(false);
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  let initialCategory = searchParams.getAll("category");
-  let initialBrand = searchParams.getAll("brand");
-  let initialColor = searchParams.getAll("color");
-  const [category, setCategory] = useState(initialCategory || []);
-  const [brand, setBrand] = useState(initialBrand || []);
-  const [color, setColor] = useState(initialColor || []);
+  const [category, setCategory] = useState(initialData.category || []);
+  const [brand, setBrand] = useState(initialData.brand || []);
+  const [color, setColor] = useState(initialData.color || []);
 
   useEffect(() => {
     let params = {
@@ -112,7 +95,7 @@ export const Sidebar = () => {
               </h2>
               <AccordionPanel pb={4}>
                 <Flex direction={"column"} gap="2">
-                  {categoriesArr.map((el) => (
+                  {categories.map((el) => (
                     <Flex pl="35%" gap="5" align={"center"}>
                       <input
                         type="checkbox"
@@ -140,7 +123,7 @@ export const Sidebar = () => {
               </h2>
               <AccordionPanel pb={4}>
                 <Flex direction="column" gap="2">
-                  {brandArr.map((el) => (
+                  {brands.map((el) => (
                     <Flex pl="35%" gap="5" align={"center"}>
                       <input
                         type="checkbox"
@@ -167,7 +150,7 @@ export const Sidebar = () => {
               </h2>
               <AccordionPanel pb={4}>
                 <Flex direction="column" gap="2">
-                  {colorsArr.map((el) => (
+                  {colors.map((el) => (
                     <Flex pl="35%" gap="5" align={"center"}>
                       <input
                         type="checkbox"
@@ -190,7 +173,7 @@ export const Sidebar = () => {
           </Text>
         </Flex>
         <Flex flex="3" justifyContent="center">
-          <ProductCard width="100%" />
+        <ProductCardComponent width="100%" />
         </Flex>
       </Flex>
     </>
