@@ -5,6 +5,7 @@ import fb from "../images/facebook.png";
 import whatsapp from "../images/whatsapp.png";
 import styled from "styled-components";
 import trendifylogo from "../images/trendifyLogoNew.png"
+import {Link} from "react-router-dom"
 
 export const Footer = ({mt}) => {
   return (
@@ -51,6 +52,11 @@ export const Footer = ({mt}) => {
             <Text align={"left"} color="white" fontSize={"20px"}>
               Trendy Accessories
             </Text>
+            <Link to = "/allproducts" >
+            <Text align={"left"} color="white" fontSize={"20px"}>
+              Admin Login
+            </Text>
+            </Link>
           </Flex>
           <Flex direction={"column"}>
             <Text color="white" fontSize={"45px"}>
