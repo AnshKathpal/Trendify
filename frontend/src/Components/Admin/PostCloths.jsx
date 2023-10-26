@@ -6,7 +6,7 @@ import { useState } from "react";
 import { postProducts } from "../../redux/Products/action";
 import { SidebarAdmin } from "./SidebarAdmin";
 
-export const PostShoes = () => {
+export const PostCloths = () => {
   const initialState = {
     image: "",
     name: "",
