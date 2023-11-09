@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { connection } = require("./db");
 const cors = require("cors");
 const express = require("express")
+const upload = require("./multerSetup")
 
 
 
@@ -24,6 +25,10 @@ const connect = async () => {
     console.log(error.message);
   }
 };
+
+app.post("/upload",upload.single('image'),(req,res) => {
+  res.json({message : 'File Uploaded'})
+})
 
 app.listen(process.env.PORT, () => {
   connect();

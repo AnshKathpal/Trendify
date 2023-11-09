@@ -24,46 +24,45 @@ export const PostShoes = () => {
 
   const [products, setProducts] = useState(initialState);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-
-
-    setProducts((prev) => {
-      const updatedProducts = { ...prev };
-
-      const keysToConvert = ["price", "rating", "reviews"];
-      for (const key in updatedProducts) {
-        if (
-          updatedProducts.hasOwnProperty(key) &&
-          keysToConvert.includes(key)
-        ) {
-          if (typeof updatedProducts[key] == "string") {
-            updatedProducts[key] = +updatedProducts[key];
-          }
-        }
-      }
-
-      if (keysToConvert.includes(name)) {
-        updatedProducts[name] = value;
-      }
-
-      return updatedProducts;
-    });
-  };
-
-
   // const handleChange = (e) => {
   //   const { name, value } = e.target;
+
   //   setProducts((prev) => {
-  //     return {
-  //       ...prev,
-  //       [name]: name === "price" || name === "rating" || name === "reviews"
-  //         ? parseFloat(value)
-  //         : value,
-  //     };
+  //     const updatedProducts = { ...prev };
+  //     console.log(updatedProducts);
+
+  //     const keysToConvert = ["price", "rating", "reviews"];
+  //     for (const key in updatedProducts) {
+  //       if (
+  //         updatedProducts.hasOwnProperty(key) &&
+  //         keysToConvert.includes(key)
+  //       ) {
+  //         if (typeof updatedProducts[key] == "string") {
+  //           updatedProducts[key] = +updatedProducts[key];
+  //         }
+  //       }
+  //     }
+
+  //     if (keysToConvert.includes(name)) {
+  //       updatedProducts[name] = value;
+  //     }
+
+  //     return updatedProducts;
   //   });
   // };
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setProducts((prev) => {
+      return {
+        ...prev,
+        [name]: name === "price" || name === "rating" || name === "reviews"
+          ? parseFloat(value) || ""
+          : value,
+      };
+    });
+  };
 
 
 
