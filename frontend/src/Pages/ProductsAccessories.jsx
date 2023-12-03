@@ -5,6 +5,7 @@ import { Header } from "../Components/Header";
 import { Sidebar } from "../Components/ProductPage-Components/Sidebar";
 import { Footer } from "../Components/Footer";
 import ProductCardAccessories from "../Components/ProductPage-Components/ProductCardAccessories";
+import { WhatsappFloat } from "../Components/WhatsappFloat";
 
 export const ProductsAccessories = () => {
 
@@ -44,6 +45,7 @@ export const ProductsAccessories = () => {
 
   return (
     <>
+    <WhatsappFloat/>
       <Header imageStyles={imageStyles} boxStyles={boxStyles} src={sunglass} text1="Glamour In" text2="Accessories" />
       <Sidebar
         categories={categoriesArr}

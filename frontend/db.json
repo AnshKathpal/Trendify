@@ -1,4 +1,20 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "student1",
+      "password": "password1",
+      "role": "student",
+      "token": "student_token_1"
+    },
+    {
+      "id": 2,
+      "username": "tutor1",
+      "password": "password1",
+      "role": "tutor",
+      "token": "tutor_token_1"
+    }
+  ],
   "products": [
     {
       "id": 1,
