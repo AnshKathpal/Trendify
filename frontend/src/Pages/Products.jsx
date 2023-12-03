@@ -7,6 +7,7 @@ import ProductAddToCart from "../Components/ProductPage-Components/ProductCard";
 import { Footer } from "../Components/Footer";
 import Pagination from "../Components/ProductPage-Components/Pagination";
 import ProductCard from "../Components/ProductPage-Components/ProductCard";
+import { WhatsappFloat } from "../Components/WhatsappFloat";
 
 export const Products = () => {
   const boxStyles = {
@@ -41,6 +42,7 @@ export const Products = () => {
 
   return (
     <>
+    <WhatsappFloat/>
       <Header
         imageStyles={imageStyles}
         boxStyles={boxStyles}

@@ -6,6 +6,7 @@ import { Header } from "../Components/Header";
 import { Sidebar } from "../Components/ProductPage-Components/Sidebar";
 import { Footer } from "../Components/Footer";
 import ProductCardCloths from "../Components/ProductPage-Components/ProductCardCloths";
+import { WhatsappFloat } from "../Components/WhatsappFloat";
 
 export const ProductsCloths = () => {
 
@@ -47,6 +48,7 @@ export const ProductsCloths = () => {
 
   return (
     <>
+    <WhatsappFloat/>
       <Header imageStyles={imageStyles} boxStyles={boxStyles} src={sweatshirt} text1="Your Style," text2="Your Choice" />
       <Sidebar
         categories={categoriesArr}

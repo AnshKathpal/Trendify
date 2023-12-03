@@ -18,6 +18,7 @@ export const PostShoes = () => {
     color: "",
     subheading: "",
     description: "",
+    size: [String],
   };
 
   const dispatch = useDispatch();
@@ -51,20 +52,32 @@ export const PostShoes = () => {
   //   });
   // };
 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProducts((prev) => {
       return {
         ...prev,
-        [name]: name === "price" || name === "rating" || name === "reviews"
-          ? parseFloat(value) || ""
-          : value,
+        [name]:
+          name === "price" || name === "rating" || name === "reviews"
+            ? parseFloat(value) || ""
+            : value,
       };
     });
   };
 
+  const handleSize = (e) => {
+    const { name, options } = e.target;
+    const selectedSizes = [];
+  
+    console.log(options);
+   
+  
+    console.log(selectedSizes);
+  
+   
+  };
 
+  console.log(products);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -101,7 +114,9 @@ export const PostShoes = () => {
           onSubmit={handleSubmit}
         >
           <Flex flexDirection={"column"} w="80%" textAlign={"left"} gap="2">
-            <label htmlFor="" style = {{fontWeight : "bold"}} >Enter Image</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Image
+            </label>
             <input
               name="image"
               value={products.image}
@@ -112,7 +127,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex flexDirection={"column"} w="80%" textAlign={"left"} gap="2">
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Name</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Name
+            </label>
             <input
               name="name"
               value={products.name}
@@ -123,7 +140,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Price</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Price
+            </label>
             <input
               name="price"
               value={products.price}
@@ -134,7 +153,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Rating</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Rating
+            </label>
             <input
               name="rating"
               value={products.rating}
@@ -145,7 +166,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Reviews</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Reviews
+            </label>
             <input
               name="reviews"
               value={products.reviews}
@@ -156,7 +179,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Category</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Category
+            </label>
             <input
               name="category"
               value={products.category}
@@ -167,7 +192,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Brand</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Brand
+            </label>
             <input
               name="brand"
               value={products.brand}
@@ -178,7 +205,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Color</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Color
+            </label>
             <input
               name="color"
               value={products.color}
@@ -189,7 +218,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Subheading</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Subheading
+            </label>
             <input
               name="subheading"
               value={products.subheading}
@@ -200,7 +231,9 @@ export const PostShoes = () => {
             />
           </Flex>
           <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
-            <label htmlFor="" style = {{fontWeight : "bold"}}>Enter Description</label>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Enter Description
+            </label>
             <input
               name="description"
               value={products.description}
@@ -209,6 +242,36 @@ export const PostShoes = () => {
               onChange={(e) => handleChange(e)}
               style={{ border: "1px solid grey" }}
             />
+          </Flex>
+          <Flex w="80%" textAlign={"left"} gap="2" flexDirection={"column"}>
+            <label htmlFor="" style={{ fontWeight: "bold" }}>
+              Select Sizes
+            </label>
+            <select
+              name="size"
+              value={products.size}
+              onChange={(e) => handleSize(e)}
+              id=""
+              style={{ border: "1px solid grey" }}
+            >
+              <option value="">Sizes</option>
+              <option value="UK4">UK 4</option>
+              <option value="UK5">UK 5</option>
+              <option value="UK6">UK 6</option>
+              <option value="UK7">UK 7</option>
+              <option value="UK8">UK 8</option>
+              <option value="UK9">UK 9</option>
+              <option value="UK10">UK 10</option>
+              <option value="UK11">UK 11</option>
+            </select>
+            {/* <input
+              name="description"
+              value={products.description}
+              type="text"
+              // placeholder="Description"
+              onChange={(e) => handleChange(e)}
+              style={{ border: "1px solid grey" }}
+            /> */}
           </Flex>
           <input type="submit" />
         </form>
